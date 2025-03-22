@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Website</title>
+  <style>
+    /* Basic reset and styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e0f7fa; /* Light soothing background */
+      color: #333;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    
+    /* Text box styling */
+    .textbox {
+      background-color: #b2ebf2; /* Slightly darker soothing color */
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Image gallery styling */
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .image-item {
+      flex: 1 1 200px;
+      text-align: center;
+    }
+    .image-item img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .image-item label {
+      display: block;
+      margin-top: 5px;
+      font-weight: bold;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .image-gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Text box with round corners -->
+    <div class="textbox">
+      <p>This is a soothing text box. You can add your content here. It has round corners and a calming background color.</p>
+    </div>
+    
+    <!-- Image gallery section -->
+    <div class="image-gallery">
+      <!-- Copy this block to add more images later -->
+      <div class="image-item">
+        <img src="img/imei-redmi-1.png" alt="imei code redmi">
+        <label>imei code redmi</label>
+      </div>
+      <div class="image-item">
+        <img src="img/imei-redmi-2.png" alt="imei code redmi">
+        <label>imei code redmi</label>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
